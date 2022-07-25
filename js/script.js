@@ -1,19 +1,112 @@
 "use strict";
 
+// 16 урок
+// ______________________________________
+let num = 20;
+
+function showFirstMessage(text) {
+    console.log(text);
+    // let num = 10;
+    console.log(num)
+}
+
+showFirstMessage("Hello world!");
+console.log(num);
+
+function calc(a, b) {
+    return (a + b);
+}
+
+console.log(calc(4, 3));
+console.log(calc(5, 6));
+console.log(calc(10, 6));
+
+function ret() {
+    let num = 50;
+    return num;
+}
+
+const anotherNum = ret();
+console.log(anotherNum);
+
+const logger = function () {
+  console.log("Hello")
+};
+
+logger();
+
+const calc = (a, b) => { return a + b };
+
+// 14 урок
+// ______________________________________
+
+// let num = 50;
+
+// while (num <= 55) {
+//     console.log(num);
+//     num++;
+// }
+
+// do {
+//     console.log(num);
+//     num++;
+// }
+// while (num <= 55);
+
+// for (let i = 1; i < 8; i++) {
+//     console.log(num);
+//     num++;
+// }
+
+
+// 13 урок
+// ______________________________________
+
+// if (4 == 9) {
+//     console.log('Ok!')
+// } else {
+//     console.log('Erorr!')
+// }
+//
+// const num = 50;
+//
+// if (num < 49) {
+//     console.log('Erorr!');
+// } else if (num > 100) {
+//     console.log('Много!');
+// } else console.log('Ok!');
+
+// (num === 50) ? console.log('Ok!') : console.log('Erorr!');
+
+// switch (num) {
+//     case 49:
+//         console.log('Неверно!');
+//         break;
+//     case 100:
+//         console.log('Неверно!');
+//         break;
+//     case 50:
+//         console.log('В точку!');
+//         break;
+//     default:
+//         console.log('Не в этот раз');
+//         break;
+// }
+
 // 9 урок
 // ______________________________________
 
-let incr = 10,
-    decr = 10;
-// incr++;
-// decr--;
-
-console.log(++incr);
-console.log(--decr);
-
-console.log(5%2);
-console.log(2*4 == 8);
-console.log(2*4 === '8');
+// let incr = 10,
+//     decr = 10;
+// // incr++;
+// // decr--;
+//
+// console.log(++incr);
+// console.log(--decr);
+//
+// console.log(5%2);
+// console.log(2*4 == 8);
+// console.log(2*4 === '8');
 
 // 8 урок
 // ______________________________________
