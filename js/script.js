@@ -2,6 +2,171 @@
 
 
 
+// 29 урок
+// ______________________________________
+
+// const box = document.getElementById('box');
+// const btns = document.getElementsByTagName('button');
+// const circles = document.getElementsByClassName('circle');
+// const hearts = document.querySelectorAll('.heart');
+// const oneHeart = document.querySelector('.heart');
+// const wrapper = document.querySelector('.wrapper');
+//
+// // box.style.backgroundColor = 'blue';
+// // box.style.width = "500px";
+//
+// box.style.cssText = 'background-color: green; width: px';
+//
+// btns[1].style.borderRadius = '100%';
+// circles[0].style.backgroundColor = 'red';
+//
+// // for (let i = 0; i < hearts.length; i++) {
+// //     hearts[i].style.backgroundColor = 'blue';
+// // }
+//
+// hearts.forEach(item => {
+//    item.style.backgroundColor = 'blue';
+// });
+//
+// const div = document.createElement('div');
+// // const text = document.createTextNode('Text');
+//
+// div.classList.add('black');
+//
+// // document.body.append(div);
+//
+// wrapper.append(div);
+// // wrapper.appendChild(div);
+//
+// // wrapper.prepend(div);
+// // wrapper.insertBefore(div, hearts[1]);
+//
+// // hearts[0].before(div);
+//
+// // hearts[0].after(div);
+//
+// // circles[0].remove();
+// // wrapper.removeChild(hearts[1]);
+//
+// // hearts[0].replaceWith(circles[0]);
+// // wrapper.replaceChild(circles[0], hearts[0]);
+//
+// div.innerHTML = "<h1>Hello World</h1>";
+//
+// // div.textContent = "Hello";
+//
+// div.insertAdjacentHTML('afterend', '<h2>Hello</h2>');
+
+// 28 урок
+// ______________________________________
+
+// const box = document.getElementById('box');
+// console.log(box);
+//
+// const btns = document.getElementsByTagName('button');
+// // const btns = document.getElementsByTagName('button')[1];
+// console.log(btns[1]);
+//
+// const circles = document.getElementsByClassName('circle');
+// console.log(circles);
+//
+// const hearts = document.querySelectorAll('.heart');
+// // console.log(hearts);
+// hearts.forEach(item => {
+//    console.log(item);
+// });
+//
+// const oneHeart = document.querySelector('.heart');
+// console.log(oneHeart);
+
+// 27 урок
+// ______________________________________
+
+// let x = 5; alert( x++ );
+
+// [ ] + false - null + true // Nan, потому что:
+// console.log(typeof ([] + false)); //"false"
+// console.log ([] + false - null); //NaN
+
+// // let y = 1; let x = y = 2; alert(x);
+// let y = 1;
+// let x = y = 2;
+// // alert(x);
+// console.log(x); // 2
+
+// console.log([ ] + 1 + 2); // "12"
+
+// alert( "1"[0] ); // 1
+
+// console.log(2 && 1 && null && 0 && undefined); // null
+
+// console.log(!!( 1 && 2 ) === (1 && 2)); // false (!! convert an expression to boolean)
+
+// alert( null || 2 && 3 || 4 ); //3
+
+// const a = [1, 2, 3];
+// const b = [1, 2, 3];
+// console.log(a==b); // false
+
+// alert( +"Infinity" ); //Infinity
+
+// console.log("Ёжик" > "яблоко"); // false
+
+// console.log(0 || "" || 2 || undefined || true || falsе ); // 2
+
+// 26 урок
+// ______________________________________
+
+// // 1)
+// console.log(typeof (String(null)));
+// console.log(typeof (String(4)));
+//
+// // 2) string через конкатенацию
+// console.log(typeof (4 + ''));
+//
+// const num = 5;
+//
+// console.log("https://vk.com/catalog/" + num);
+//
+// const fontSize = 26 + 'px';
+
+// To Number
+
+// // 1)
+// console.log(typeof (Number('4')));
+//
+// // 2)
+// console.log(typeof (+'4'));
+//
+// // 3)
+// console.log(typeof (parseInt('15px', 10)));
+//
+//
+// let answ = +prompt("Hello", "");
+
+// To boolean
+
+// 0, '', null, undefined, NaN; // <-false
+
+// // 1)
+// let switcher = null;
+//
+// if (switcher) {
+//     console.log('Working');
+// }
+//
+// switcher = 1;
+//
+// if (switcher) {
+//     console.log('Working...');
+// }
+
+// // 2)
+//
+// console.log(typeof (Boolean('4')));
+
+// // 3)
+// console.log(typeof (!!'4'));
 
 // 23 урок
 // ______________________________________
