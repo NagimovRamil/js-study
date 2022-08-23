@@ -1,10 +1,43 @@
 "use strict";
 
+// 40 урок
+// ______________________________________
+// const now = new Date();
+
+// const now = new Date('2022-08-22');
+// new Date.parse('2022-08-22');
+
+// const now = new Date(2022, 8, 22, 20);
+// const now = new Date(0);
+// const now = new Date(-99999999999);
+
+// console.log(now);
+// console.log(now.getFullYear());
+// console.log(now.getMonth());
+// console.log(now.getDate());
+// console.log(now.getDay());
+// console.log(now.getUTCHours());
+
+// console.log(now.getTimezoneOffset());
+// console.log(now.getTime());
+// console.log(now.setHours(18, 40));
+// console.log(now);
+
+let start = new Date();
+
+for (let i = 0; i < 100000; i++) {
+    let some = i ** 3;
+}
+
+let end = new Date();
+
+alert(`Цикл отработал за ${end - start} миллисекунд`);
+
 // 35 урок
 // ______________________________________
 
-const p = document.querySelectorAll('p');
-console.log(p);
+// const p = document.querySelectorAll('p');
+// console.log(p);
 
 // 34 урок
 // ______________________________________
