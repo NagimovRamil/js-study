@@ -1,37 +1,274 @@
 "use strict";
 
+// 55 урок
+// ______________________________________
+
+// // console.log('Запрос данных...');
+// //
+// // const req = new Promise(function (resolve, reject) {
+// //     setTimeout(() => {
+// //         console.log('Подготовка данных...');
+// //
+// //         const product = {
+// //             name: 'TV',
+// //             price: 2000
+// //         };
+// //
+// //         resolve(product);
+// //     }, 2000);
+// // });
+// //
+// // req.then((product) => {
+// //     return new Promise((resolve, reject) => {
+// //         setTimeout(() => {
+// //             product.status = 'order';
+// //             resolve(product);
+// //         }, 2000);
+// //     });
+// // }).then(data => {
+// //     data.modify = true;
+// //     return data;
+// // }).then((data) => {
+// //     console.log(data);
+// // }).catch(() => {
+// //    console.error('Произошла ошибка');
+// // }).finally(() => {
+// //     console.log('Finally');
+// // });
+//
+// const test = time => {
+//     return new Promise(resolve => {
+//         setTimeout(() => resolve(), time);
+//     });
+// };
+//
+// // test(1000).then(() => console.log('1000 ms'));
+// // test(2000).then(() => console.log('2000 ms'));
+//
+// // Promise.all([test(1000), test(2000)]).then(() => {
+// //    console.log('All');
+// // });
+//
+// Promise.race([test(1000), test(5000)]).then(() => {
+//     console.log('Race');
+// });
+
+// 51 урок
+// ______________________________________
+
+// const person = {
+//     name: 'Alex',
+//     tel: '+7444444',
+//     parents: {
+//         mom: 'Olga',
+//         dad: 'Mike'
+//     }
+// };
+//
+// // console.log(JSON.parse(JSON.stringify(person)));
+// const clone = JSON.parse(JSON.stringify(person));
+// clone.parents.mom = 'Ann';
+// console.log(person);
+// console.log(clone);
+
+// 49 урок
+// ______________________________________
+
+// const log = function (a, b, ...rest) {
+//     console.log(a, b, rest);
+// }
+//
+// log('basic', 'rest', 'operator', 'usage');
+//
+// function calcOrDouble(number, basis = 2) {
+//     console.log(number * basis);
+// }
+//
+// calcOrDouble(3);
+
+// 47 урок
+// ______________________________________
+
+// class Rectangle {
+//     constructor(height, width) {
+//         this.height = height;
+//         this.width = width;
+//     }
+//
+//     calcArea() {
+//         return this.height * this.width;
+//     }
+// }
+//
+// const square = new Rectangle(10, 10);
+// const long = new Rectangle(20, 100);
+// console.log(square.calcArea());
+// console.log(long.calcArea());
+//
+// class ColoredRectangleWithText extends Rectangle {
+//     constructor(height, width, text, bgColor) {
+//         super(height, width);
+//         this.text = text;
+//         this.bgColor = bgColor;
+//     }
+//
+//     showMyProps() {
+//         console.log(`Текст: ${this.text}`)
+//     }
+// }
+//
+// const div = new ColoredRectangleWithText(25, 10, 'Hello world', 'red');
+//
+// div.showMyProps();
+// console.log(div.calcArea());
+
+
+// 46 урок
+// ______________________________________
+
+// //1:
+// // function showThis(a, b) {
+// //     console.log(this);
+// //     function sum() {
+// //         console.log(this);
+// //         return a + b;
+// //     }
+// //
+// //     console.log(sum());
+// // }
+// // showThis(4, 5);
+//
+// //2:
+// // const obj = {
+// //     a: 20,
+// //     b: 15,
+// //     sum: function () {
+// //         console.log(this);
+// //     }
+// // }
+// // obj.sum();
+//
+// //3:
+// // function User(name, id) {
+// //     this.name = name;
+// //     this.id = id;
+// //     this.human = true;
+// // }
+// // let ivan = new User('Ivan', 28);
+//
+// //4:
+// // function sayName(surname) {
+// //     console.log(this);
+// //     console.log(this.name + surname);
+// // }
+// //
+// // const user = {
+// //     name: 'John'
+// // };
+// //
+// // sayName.call(user, 'Smith');
+// // sayName.apply(user, ['Smith']);
+// //
+// // // bind - создает новую функцию связанную с определенным контекстом
+// // function count(num) {
+// //     return this*num;
+// // }
+// //
+// // const double = count.bind(2);
+// // console.log(double(13));
+//
+// // 1) Обычная функция: this = window, но если use strict = undefined;
+// // 2) Контекст у методов объекта - сам объект
+// // 3) this в конструкторах и классах - это новый экземпляр объекта
+// // 4) Ручная привязка this: call, apply, bind
+//
+// const btn = document.querySelector('button');
+// // btn.addEventListener('click', function () {
+// //     // console.log(this);
+// //     this.style.backgroundColor = 'red';
+// // });
+// btn.addEventListener('click', function (e) {
+//     // console.log(this);
+//     e.target.style.backgroundColor = 'red';
+// });
+//
+// const obj = {
+//     num: 5,
+//     sayNumber: function () {
+//         const say = () => {
+//             console.log(this);
+//         };
+//
+//         say();
+//     }
+// };
+//
+// obj.sayNumber();
+//
+// const double = a => a * 2;
+// console.log(double(4));
+
+// 45 урок
+// ______________________________________
+
+// // const num = new Number(3);
+// // console.log(num);
+// function User(name, id) {
+//     this.name = name;
+//     this.id = id;
+//     this.human = true;
+//     this.hello = function () {
+//         console.log(`Hello ${this.name}`);
+//     }
+// }
+//
+// User.prototype.exit = function () {
+//     console.log(`Пользователь ${this.name} ушел`)
+// }
+//
+// const ivan = new User('Ivan', 28);
+// const alex = new User('Alex', 20);
+//
+// ivan.exit();
+//
+// ivan.hello();
+// alex.hello();
+//
+// console.log(ivan);
+// console.log(alex);
+
 // 40 урок
 // ______________________________________
-// const now = new Date();
-
-// const now = new Date('2022-08-22');
-// new Date.parse('2022-08-22');
-
-// const now = new Date(2022, 8, 22, 20);
-// const now = new Date(0);
-// const now = new Date(-99999999999);
-
-// console.log(now);
-// console.log(now.getFullYear());
-// console.log(now.getMonth());
-// console.log(now.getDate());
-// console.log(now.getDay());
-// console.log(now.getUTCHours());
-
-// console.log(now.getTimezoneOffset());
-// console.log(now.getTime());
-// console.log(now.setHours(18, 40));
-// console.log(now);
-
-let start = new Date();
-
-for (let i = 0; i < 100000; i++) {
-    let some = i ** 3;
-}
-
-let end = new Date();
-
-alert(`Цикл отработал за ${end - start} миллисекунд`);
+// // const now = new Date();
+//
+// // const now = new Date('2022-08-22');
+// // new Date.parse('2022-08-22');
+//
+// // const now = new Date(2022, 8, 22, 20);
+// // const now = new Date(0);
+// // const now = new Date(-99999999999);
+//
+// // console.log(now);
+// // console.log(now.getFullYear());
+// // console.log(now.getMonth());
+// // console.log(now.getDate());
+// // console.log(now.getDay());
+// // console.log(now.getUTCHours());
+//
+// // console.log(now.getTimezoneOffset());
+// // console.log(now.getTime());
+// // console.log(now.setHours(18, 40));
+// // console.log(now);
+//
+// let start = new Date();
+//
+// for (let i = 0; i < 100000; i++) {
+//     let some = i ** 3;
+// }
+//
+// let end = new Date();
+//
+// alert(`Цикл отработал за ${end - start} миллисекунд`);
 
 // 35 урок
 // ______________________________________
