@@ -1,5 +1,38 @@
 "use strict";
 
+// 65 урок
+// ______________________________________
+
+// new RegExp('pattern', 'flags');
+// /pattern/flag
+
+// const ans = prompt('Введите ваше имя');
+
+// const reg = /n/ig;
+// // i - вне зависимости от регистра
+// // g - сразу несколько вхождений
+// // m - многострочный режим
+// console.log(ans.match(reg));
+
+// const pass = prompt('Password');
+
+// \ - экранирование
+// console.log(pass.replace(/./g, "*"));
+// console.log('12-34-56'.replace(/-/g, ':'));
+// console.log(reg.test(ans));
+
+const str = 'My name is R2D2';
+
+console.log(str.match(/\w\d\w\d/i));
+
+
+
+// \d - цифры
+// \D - не цифры
+// \w - слова
+// \W - не слова
+// \s - пробелы
+
 // 64 урок
 // ______________________________________
 
