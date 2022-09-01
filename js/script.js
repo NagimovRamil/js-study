@@ -1,5 +1,16 @@
 "use strict";
 
+// 64 урок
+// ______________________________________
+
+// localStorage.setItem('number', 5);
+//
+// // console.log(localStorage.getItem('number'));
+//
+// localStorage.removeItem('number');
+//
+// localStorage.clear();
+
 // 57 урок
 // ______________________________________
 
